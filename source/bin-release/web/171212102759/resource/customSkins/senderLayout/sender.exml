@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  class="sender" width="72" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15fc9129c29"/>
+	<e:Image source="senderBG_png" left="0" top="0"/>
+	<e:Label text="0" horizontalCenter="0" size="24" y="41"/>
+</e:Skin>

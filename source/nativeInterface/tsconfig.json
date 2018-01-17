@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"allowJs": true,
+		"outFile": "bin/nativeInterface.js"
+	},
+	"files": [
+        "src/WelfareNativeLib.js",
+        "src/WelfareNativeIndex.js"
+    ]
+}

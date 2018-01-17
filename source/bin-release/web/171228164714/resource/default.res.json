@@ -1,0 +1,205 @@
+{
+	"groups": [
+		{
+			"keys": "chooseButton50_bg_webp,chooseButton1000_bg_webp,chooseButton100_bg_webp,chooseButton20_bg_webp,chooseButton500_bg_webp,empty_bg_webp",
+			"name": "chooseLayout"
+		},
+		{
+			"keys": "",
+			"name": "home"
+		},
+		{
+			"keys": "wrapcircle_bg2_webp,wrapcircle_bg_webp,win_webp,win_light2_webp,win_light1_webp,tip_webp,small_light_webp,small_light_2_webp,scroll_webp,panel_bg_webp,panal_open_webp,panal_bg_webp,no_win_webp,no_bet_webp",
+			"name": "turntableLayout"
+		},
+		{
+			"keys": "senderBG_webp",
+			"name": "senderLayout"
+		},
+		{
+			"keys": "historyLayoutBG_webp,historyLayoutBG2_webp,diamond_webp,crown_webp,new_webp",
+			"name": "historyLayout"
+		},
+		{
+			"keys": "",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/chooseButton100_bg.webp",
+			"type": "image",
+			"name": "chooseButton100_bg_webp"
+		},
+		{
+			"url": "assets/chooseButton500_bg.webp",
+			"type": "image",
+			"name": "chooseButton500_bg_webp"
+		},
+		{
+			"url": "assets/chooseButton1000_bg.webp",
+			"type": "image",
+			"name": "chooseButton1000_bg_webp"
+		},
+		{
+			"url": "assets/empty_bg.webp",
+			"type": "image",
+			"name": "empty_bg_webp"
+		},
+		{
+			"url": "assets/chooseButton20_bg.webp",
+			"type": "image",
+			"name": "chooseButton20_bg_webp"
+		},
+		{
+			"url": "assets/chooseButton50_bg.webp",
+			"type": "image",
+			"name": "chooseButton50_bg_webp"
+		},
+		{
+			"url": "assets/diamond.webp",
+			"type": "image",
+			"name": "diamond_webp"
+		},
+		{
+			"url": "assets/new.webp",
+			"type": "image",
+			"name": "new_webp"
+		},
+		{
+			"url": "assets/crown.webp",
+			"type": "image",
+			"name": "crown_webp"
+		},
+		{
+			"url": "assets/historyLayoutBG.webp",
+			"type": "image",
+			"name": "historyLayoutBG_webp"
+		},
+		{
+			"url": "assets/historyLayoutBG2.webp",
+			"type": "image",
+			"name": "historyLayoutBG2_webp"
+		},
+		{
+			"url": "assets/movingTip.webp",
+			"type": "image",
+			"name": "movingTip_webp"
+		},
+		{
+			"url": "assets/left.webp",
+			"type": "image",
+			"name": "left_webp"
+		},
+		{
+			"url": "assets/myCoin.webp",
+			"type": "image",
+			"name": "myCoin_webp"
+		},
+		{
+			"url": "assets/no_order.webp",
+			"type": "image",
+			"name": "no_order_webp"
+		},
+		{
+			"url": "assets/rule_math_up.webp",
+			"type": "image",
+			"name": "rule_math_up_webp"
+		},
+		{
+			"url": "assets/rule_panel.webp",
+			"type": "image",
+			"name": "rule_panel_webp"
+		},
+		{
+			"url": "assets/bg.webp",
+			"type": "image",
+			"name": "bg_webp"
+		},
+		{
+			"url": "assets/no_network.webp",
+			"type": "image",
+			"name": "no_network_webp"
+		},
+		{
+			"url": "assets/addCoinBtn.webp",
+			"type": "image",
+			"name": "addCoinBtn_webp"
+		},
+		{
+			"url": "assets/wrapcircle_bg2.webp",
+			"type": "image",
+			"name": "wrapcircle_bg2_webp"
+		},
+		{
+			"url": "assets/wrapcircle_bg.webp",
+			"type": "image",
+			"name": "wrapcircle_bg_webp"
+		},
+		{
+			"url": "assets/no_bet.webp",
+			"type": "image",
+			"name": "no_bet_webp"
+		},
+		{
+			"url": "assets/no_win.webp",
+			"type": "image",
+			"name": "no_win_webp"
+		},
+		{
+			"url": "assets/tip.webp",
+			"type": "image",
+			"name": "tip_webp"
+		},
+		{
+			"url": "assets/win.webp",
+			"type": "image",
+			"name": "win_webp"
+		},
+		{
+			"url": "assets/win_light2.webp",
+			"type": "image",
+			"name": "win_light2_webp"
+		},
+		{
+			"url": "assets/win_light1.webp",
+			"type": "image",
+			"name": "win_light1_webp"
+		},
+		{
+			"url": "assets/small_light_2.webp",
+			"type": "image",
+			"name": "small_light_2_webp"
+		},
+		{
+			"url": "assets/small_light.webp",
+			"type": "image",
+			"name": "small_light_webp"
+		},
+		{
+			"url": "assets/scroll.webp",
+			"type": "image",
+			"name": "scroll_webp"
+		},
+		{
+			"url": "assets/panal_open.webp",
+			"type": "image",
+			"name": "panal_open_webp"
+		},
+		{
+			"url": "assets/panel_bg.webp",
+			"type": "image",
+			"name": "panel_bg_webp"
+		},
+		{
+			"url": "assets/panal_bg.webp",
+			"type": "image",
+			"name": "panal_bg_webp"
+		},
+		{
+			"url": "assets/senderBG.webp",
+			"type": "image",
+			"name": "senderBG_webp"
+		}
+	]
+}

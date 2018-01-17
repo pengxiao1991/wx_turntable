@@ -1,0 +1,195 @@
+{
+	"groups": [
+		{
+			"keys": "chooseButton1000_bg_png,chooseButton100_bg_png,chooseButton20_bg_png,chooseButton500_bg_png,chooseButton50_bg_png,empty_bg_png",
+			"name": "chooseLayout"
+		},
+		{
+			"keys": "senderBG_png",
+			"name": "home"
+		},
+		{
+			"keys": "wrapcircle_bg_png,wrapcircle_bg2_png,scroll_png,tip_png,panal_bg_png,win_light2_png,movingTip_png,no_win_png",
+			"name": "turntableLayout"
+		},
+		{
+			"keys": "movingTip_png",
+			"name": "senderLayout"
+		},
+		{
+			"keys": "crown_png,new_png,historyLayoutBG_png",
+			"name": "historyLayout"
+		},
+		{
+			"keys": "rule_math_up_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/wrapcircle_bg.png",
+			"type": "image",
+			"name": "wrapcircle_bg_png"
+		},
+		{
+			"url": "assets/wrapcircle_bg2.png",
+			"type": "image",
+			"name": "wrapcircle_bg2_png"
+		},
+		{
+			"url": "assets/small_light_2.png",
+			"type": "image",
+			"name": "small_light_2_png"
+		},
+		{
+			"url": "assets/small_light.png",
+			"type": "image",
+			"name": "small_light_png"
+		},
+		{
+			"url": "assets/crown.png",
+			"type": "image",
+			"name": "crown_png"
+		},
+		{
+			"url": "assets/new.png",
+			"type": "image",
+			"name": "new_png"
+		},
+		{
+			"url": "assets/historyLayoutBG.png",
+			"type": "image",
+			"name": "historyLayoutBG_png"
+		},
+		{
+			"url": "assets/historyLayoutBG2.png",
+			"type": "image",
+			"name": "historyLayoutBG2_png"
+		},
+		{
+			"url": "assets/diamond.png",
+			"type": "image",
+			"name": "diamond_png"
+		},
+		{
+			"url": "assets/historyLayoutBG.png",
+			"type": "image",
+			"name": "historyLayoutBG3_png"
+		},
+		{
+			"url": "assets/historyLayoutBG2.png",
+			"type": "image",
+			"name": "historyLayoutBG22_png"
+		},
+		{
+			"url": "assets/tip.png",
+			"type": "image",
+			"name": "tip_png"
+		},
+		{
+			"url": "assets/panal_bg.png",
+			"type": "image",
+			"name": "panal_bg_png"
+		},
+		{
+			"url": "assets/panal_open.png",
+			"type": "image",
+			"name": "panal_open_png"
+		},
+		{
+			"url": "assets/win_light2.png",
+			"type": "image",
+			"name": "win_light2_png"
+		},
+		{
+			"url": "assets/scroll.png",
+			"type": "image",
+			"name": "scroll_png"
+		},
+		{
+			"url": "assets/no_bet.png",
+			"type": "image",
+			"name": "no_bet_png"
+		},
+		{
+			"url": "assets/panel_bg.png",
+			"type": "image",
+			"name": "panel_bg_png"
+		},
+		{
+			"url": "assets/win.png",
+			"type": "image",
+			"name": "win_png"
+		},
+		{
+			"url": "assets/win_light1.png",
+			"type": "image",
+			"name": "win_light1_png"
+		},
+		{
+			"url": "assets/movingTip.png",
+			"type": "image",
+			"name": "movingTip_png"
+		},
+		{
+			"url": "assets/senderBG.png",
+			"type": "image",
+			"name": "senderBG_png"
+		},
+		{
+			"url": "assets/chooseButton1000_bg.png",
+			"type": "image",
+			"name": "chooseButton1000_bg_png"
+		},
+		{
+			"url": "assets/chooseButton100_bg.png",
+			"type": "image",
+			"name": "chooseButton100_bg_png"
+		},
+		{
+			"url": "assets/chooseButton20_bg.png",
+			"type": "image",
+			"name": "chooseButton20_bg_png"
+		},
+		{
+			"url": "assets/chooseButton500_bg.png",
+			"type": "image",
+			"name": "chooseButton500_bg_png"
+		},
+		{
+			"url": "assets/chooseButton50_bg.png",
+			"type": "image",
+			"name": "chooseButton50_bg_png"
+		},
+		{
+			"url": "assets/empty_bg.png",
+			"type": "image",
+			"name": "empty_bg_png"
+		},
+		{
+			"url": "assets/left.png",
+			"type": "image",
+			"name": "left_png"
+		},
+		{
+			"url": "assets/no_order.png",
+			"type": "image",
+			"name": "no_order_png"
+		},
+		{
+			"url": "assets/rule_panel.png",
+			"type": "image",
+			"name": "rule_panel_png"
+		},
+		{
+			"url": "assets/rule_math_up.png",
+			"type": "image",
+			"name": "rule_math_up_png"
+		},
+		{
+			"url": "assets/no_win.png",
+			"type": "image",
+			"name": "no_win_png"
+		}
+	]
+}

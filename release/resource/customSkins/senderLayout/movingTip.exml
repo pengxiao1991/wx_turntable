@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="movingTip" width="72" height="72" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="100%" height="100%" left="0" top="0" source="chooseButton500_bg_webp"/>
+	<e:Label size="30" horizontalCenter="0" verticalCenter="0" text="" width="100%" height="100%" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

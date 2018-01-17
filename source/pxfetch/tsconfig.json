@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"allowJs": true,
+		"outFile": "bin/pxfetch.js"
+	},
+	"files": ["src/fetch.js","src/pxfetch.js"]
+
+}

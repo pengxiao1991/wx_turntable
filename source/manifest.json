@@ -1,0 +1,43 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/res/res.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/tween/tween.js",
+		"promise/bin/promise.js",
+		"pxfetch/bin/pxfetch.js",
+		"StompWebSocket/bin/StompWebSocket.js",
+		"nativeInterface/bin/nativeInterface.js"
+	],
+	"game": [
+		"bin-debug/public/GlobalEmitter.js",
+		"bin-debug/public/GlobalEvent.js",
+		"bin-debug/public/FetchManager.js",
+		"bin-debug/modules/timer/Rule.js",
+		"bin-debug/public/WebsocketService.js",
+		"bin-debug/modules/turntableLayout/OpenAwardInfo.js",
+		"bin-debug/modules/header/Header.js",
+		"bin-debug/modules/header/Order.js",
+		"bin-debug/modules/historyLayout/HistoryLayout.js",
+		"bin-debug/modules/homeLayout/Home.js",
+		"bin-debug/modules/noNetWork/NoNetWork.js",
+		"bin-debug/modules/senderLayout/MovingTip.js",
+		"bin-debug/modules/senderLayout/Sender.js",
+		"bin-debug/modules/timer/CountDownTime.js",
+		"bin-debug/public/GameInfo.js",
+		"bin-debug/Main.js",
+		"bin-debug/modules/turntableLayout/Section.js",
+		"bin-debug/public/ProcessManager.js",
+		"bin-debug/modules/turntableLayout/Turntable.js",
+		"bin-debug/public/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/public/FetchService.js",
+		"bin-debug/modules/chooseLayout/Choose.js",
+		"bin-debug/modules/chooseLayout/MyMovingTip.js",
+		"bin-debug/public/NodePool.js",
+		"bin-debug/public/ServersEngine.js",
+		"bin-debug/public/ThemeAdapter.js",
+		"bin-debug/modules/timer/MyCoin.js"
+	]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="choose" width="1080" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Group width="120" height="120" left="48" verticalCenter="0">
+		<e:Image source="empty_bg_webp" left="0" verticalCenter="0" width="100%" height="100%"/>
+		<e:Label text="清空" verticalCenter="0" horizontalCenter="0" size="36" textColor="0xffffff" alpha="0.4"/>
+	</e:Group>
+	<e:Group width="96" height="96" x="258" name="20" verticalCenter="0">
+		<e:Image source="chooseButton20_bg_webp" left="0" top="0" width="100%" height="100%"/>
+		<e:Label text="20" size="48" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="96" height="96" x="423" name="50" verticalCenter="0">
+		<e:Image left="0" top="0" width="100%" height="100%" source="chooseButton50_bg_webp"/>
+		<e:Label text="50" size="48" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="96" height="96" x="585" name="100" verticalCenter="0">
+		<e:Image left="0" top="0" width="100%" height="100%" source="chooseButton100_bg_webp"/>
+		<e:Label text="100" size="39" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="96" height="96" x="750" name="500" verticalCenter="0">
+		<e:Image left="0" top="0" width="100%" height="100%" source="chooseButton500_bg_webp"/>
+		<e:Label text="500" size="39" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="96" height="96" x="912" name="1000" verticalCenter="0">
+		<e:Image left="0" top="0" width="100%" height="100%" source="chooseButton1000_bg_webp"/>
+		<e:Label text="1000" size="36" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

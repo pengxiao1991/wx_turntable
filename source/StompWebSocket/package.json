@@ -1,0 +1,4 @@
+{
+	"name": "StompWebSocket",
+	"typings": "src/StompWebSocket.d.ts"
+}
