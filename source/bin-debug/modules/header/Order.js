@@ -87,7 +87,11 @@ var Order = (function () {
                 str = '';
             }.bind(this));
             if (over10) {
-                orderStr += "<div class=\"order_footer\">\n\t\t\t\t   <span>\u66F4\u591A\u8BA2\u5355</span>\n\t\t\t\t   <div></div>\n\t\t\t\t   </div>";
+                var device = Native.getDeviceInfo();
+                var moreTableOrderLink = Link.ORDER[Link.getOrderKeyByDeviceVersion(device.cv)]['TABLE'];
+                if (!!moreTableOrderLink) {
+                    orderStr += "<div class=\"order_footer\">\n\t\t\t\t\t<span>\u66F4\u591A\u8BA2\u5355</span>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t</div>";
+                }
             }
             document.querySelector('.order_box').innerHTML = orderStr;
             document.querySelector('.order_box').scrollTop = 0;
@@ -101,7 +105,12 @@ var Order = (function () {
     };
     //查看更多订单
     Order.prototype.clickMoreOrder = function () {
-        location.href = 'flyme://com.meizu.compaign/gameRecords/list?url=https://venice.uwaterpark.com/native/auth/game/roulette/user_stake_record.do&title=大转盘参与记录';
+        var device = Native.getDeviceInfo();
+        var moreTableOrderLink = Link.ORDER[Link.getOrderKeyByDeviceVersion(device.cv)]['TABLE'];
+        if (!!moreTableOrderLink) {
+            location.href = moreTableOrderLink;
+        }
+        // location.href = 'flyme://com.meizu.compaign/gameRecords/list?url=https://venice.uwaterpark.com/native/auth/game/roulette/user_stake_record.do&title=大转盘参与记录';
     };
     Order.prototype.setDate = function (date) {
         var tempTime = new Date(date);

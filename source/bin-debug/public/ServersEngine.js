@@ -95,10 +95,10 @@ var ServersEngine = (function () {
     //默认来源渠道
     ServersEngine.CHANNEL = (function () {
         var channel = '003' //默认福利中心
-        , part = location.href.split('?')[1];
+        , part = location.href.split('?')[1], key = Link.CHANNEL_KEY;
         if (!!part && part.indexOf('channel') != -1) {
             part.split('&').forEach(function (str) {
-                if (str.indexOf('channel') == 0) {
+                if (str.indexOf(key) == 0) {
                     channel = str.split('=')[1];
                 }
             });

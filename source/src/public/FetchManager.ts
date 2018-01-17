@@ -19,7 +19,7 @@ namespace FetchManager {
 			}
 			return channel;
 		})();
-	// Native.mockLogin(MOCK_TOKEN, '测试用');
+	Native.mockLogin(MOCK_TOKEN, '测试用');
 	
 	
     

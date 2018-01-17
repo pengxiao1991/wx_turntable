@@ -130,7 +130,8 @@ var MyCoin = (function () {
                 }
             };
         }
-        location.href = 'flyme://com.meizu.compaign/coupon/dialog?resultCallback=global_chargeCoinCallback'; //拉起优惠券列表弹框
+        // location.href = 'flyme://com.meizu.compaign/coupon/dialog?resultCallback=global_chargeCoinCallback';//拉起优惠券列表弹框
+        location.href = Link.CHARGE;
     };
     return MyCoin;
 }());

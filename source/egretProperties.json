@@ -1,41 +1,36 @@
 {
-	"native": {
-		"path_ignore": []
-	},
-	"publish": {
-		"web": 0,
-		"native": 1,
-		"path": "bin-release"
-	},
-	"egret_version": "5.0.12",
-	"template": {},
-	"eui": {
-		"exmlRoot": [
-			"resource/customSkins"
-		],
-		"themes": [
-			"resource/default.thm.json"
-		],
-		"exmlPublishPolicy": "content"
-	},
-	"modules": [
-		{
-			"name": "egret"
-		},
-		{
-			"name": "res"
-		},
-		{
-			"name": "eui"
-		},
-		{
-			"name": "tween"
-		},
-		{
-			"name": "promise",
-			"path": "./promise"
-		},
-		{
+  "engineVersion": "5.1.3",
+  "compilerVersion": "5.1.3",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins"
+    ],
+    "themes": [
+      "resource/default.thm.json"
+    ],
+    "exmlPublishPolicy": "commonjs"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "promise"
+    },
+    {
 			"name": "pxfetch",
 			"path": "./pxfetch"
 		},
@@ -47,5 +42,5 @@
 			"name": "nativeInterface",
 			"path": "./nativeInterface"
 		}
-	]
+  ]
 }

@@ -5,17 +5,17 @@ var FetchManager;
     //模拟token
     MOCK_TOKEN = "eyJ2IjozLCJnIjpmYWxzZSwidSI6IjE0NjIzNTAiLCJ0IjoxNTE0ODc5NTk2ODIzLCJzIjoibnMiLCJjIjoiMSIsInIiOiJSeHhhbG1DbUdsc3lqb01BTmlXUSIsImEiOiJEMzI4OTg5NTEwNEVCOEEzNzI2OUVERkUxOTdCODlBMSIsImwiOiI4NTlCQTRBREIzOTY1MEQwODA1MTdDMEIyOThCN0NDNiJ9", CHANNEL = (function () {
         var channel = '003' //默认福利中心
-        , part = location.href.split('?')[1];
+        , part = location.href.split('?')[1], key = Link.CHANNEL_KEY;
         if (!!part && part.indexOf('channel') != -1) {
             part.split('&').forEach(function (str) {
-                if (str.indexOf('channel') == 0) {
+                if (str.indexOf(key) == 0) {
                     channel = str.split('=')[1];
                 }
             });
         }
         return channel;
     })();
-    // Native.mockLogin(MOCK_TOKEN, '测试用');
+    Native.mockLogin(MOCK_TOKEN, '测试用');
     // 设置全局过滤函数
     Pxfetch.fetchPrefilter(function (param) {
         //追加来源渠道

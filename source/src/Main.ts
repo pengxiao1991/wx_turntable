@@ -34,7 +34,7 @@ class Main extends eui.UILayer {
      */
     // private loadingView: LoadingUI;
 
-    protected createChildren(): void {
+    protected async createChildren(): void {
         super.createChildren();
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
@@ -65,17 +65,19 @@ class Main extends eui.UILayer {
 
         // initialize the Resource loading library
         //初始化Resource资源加载库
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        RES.loadConfig("resource/default.res.json", "resource/");
+        // RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+        // RES.loadConfig("resource/default.res.json", "resource/");
+        await RES.loadConfig("resource/default.res.json", "resource/");
+        this.onConfigComplete();
     }
     /**
      * 配置文件加载完成,开始预加载皮肤主题资源和preload资源组。
      * Loading of configuration file is complete, start to pre-load the theme configuration file and the preload resource group
      */
-    private onConfigComplete(event: RES.ResourceEvent): void {
-        RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+    private onConfigComplete(): void {
         // load skin theme configuration file, you can manually modify the file. And replace the default skin.
         //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
+ 
         let theme = new eui.Theme("resource/default.thm.json", this.stage);
         theme.addEventListener(eui.UIEvent.COMPLETE, this.onThemeLoadComplete, this);
 
@@ -187,7 +189,7 @@ class Main extends eui.UILayer {
      */
     private onResourceProgress(event: RES.ResourceEvent): void {
         this.progressCount += 5;     
-        Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
+        // Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
 
     }
     // 加载进度百分比
@@ -204,48 +206,48 @@ class Main extends eui.UILayer {
         
         this.addChild(this.homeUI);
         
-        this.homeUI.bottom = 0;
-        RES.loadGroup('chooseLayout');   
-        RES.loadGroup('historyLayout');     
-        RES.loadGroup('senderLayout');             
+        // this.homeUI.bottom = 0;
+        // RES.loadGroup('chooseLayout');   
+        // RES.loadGroup('historyLayout');     
+        // RES.loadGroup('senderLayout');             
         
-        let order = new Order();
-        let rule = new Rule();
-        new CountDownTime();
-        new Header();
-        new NoNetWork();
-        new MyCoin();
-        WebsocketService.init();//管道初始化
+        // let order = new Order();
+        // let rule = new Rule();
+        // new CountDownTime();
+        // new Header();
+        // new NoNetWork();
+        // new MyCoin();
+        // WebsocketService.init();//管道初始化
 
         
-        Native.bindBackListener((params) => {
-            if (order.active) {
-                order.closePanel();
-                return;
-            }
-            if (rule.active) {
-                rule.closeRuleBox();
-                return;
-            } 
+        // Native.bindBackListener((params) => {
+        //     if (order.active) {
+        //         order.closePanel();
+        //         return;
+        //     }
+        //     if (rule.active) {
+        //         rule.closeRuleBox();
+        //         return;
+        //     } 
 
-        egret.ticker.pause();
-        setTimeout(() => {
-            Native.finishPage();
-        }, 50);
+        // egret.ticker.pause();
+        // setTimeout(() => {
+        //     Native.finishPage();
+        // }, 50);
             
-        });
-        //息屏	
-        Native.bindStartStopScreenListener(function (data) {
-            var isHidden = !data['isStart'];
-            if(isHidden){
-                ProcessManager.stop();    
-                GameInfo.isInterrupted = true;  
-                GlobalEmitter.emit(GlobalEvent.SCREENOFF);
-            } else{
-                GameInfo.isInterrupted = false;  
-                ProcessManager.init();
-            }
-        })
+        // });
+        // //息屏	
+        // Native.bindStartStopScreenListener(function (data) {
+        //     var isHidden = !data['isStart'];
+        //     if(isHidden){
+        //         ProcessManager.stop();    
+        //         GameInfo.isInterrupted = true;  
+        //         GlobalEmitter.emit(GlobalEvent.SCREENOFF);
+        //     } else{
+        //         GameInfo.isInterrupted = false;  
+        //         ProcessManager.init();
+        //     }
+        // })
    
 
    

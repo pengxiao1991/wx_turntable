@@ -78,7 +78,9 @@ var WebsocketService = (function () {
     };
     //清注
     WebsocketService.emptyMyBetting = function (callback) {
-        ServersEngine.sendMessage("/req/game/roulette/clear_stake", JSON.stringify({ channel: '003' }), function (response) {
+        var tempParam = {};
+        tempParam[Link.CHANNEL_KEY] = '003';
+        ServersEngine.sendMessage("/req/game/roulette/clear_stake", JSON.stringify(tempParam), function (response) {
             console.log('清注');
             if (response.code == 200) {
                 callback(response);
@@ -100,7 +102,9 @@ var WebsocketService = (function () {
      */
     WebsocketService.myBetting = function (stakeId, amout, callback) {
         console.log('下注了', amout);
-        ServersEngine.sendMessage("/req/game/roulette/stake", JSON.stringify({ stakeId: stakeId, amount: amout, channel: '003' }), function (response) {
+        var tempParam = { stakeId: stakeId, amount: amout };
+        tempParam[Link.CHANNEL_KEY] = '003';
+        ServersEngine.sendMessage("/req/game/roulette/stake", JSON.stringify(tempParam), function (response) {
             console.log(response, 'myBeting');
             if (response.code == 200) {
                 callback(response);

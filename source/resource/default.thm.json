@@ -1,7 +1,8 @@
 {
-  "skins": {},
-  "autoGenerateExmlsList": false,
-  "exmls": [
-    "resource/customSkins/homeLayout/home.exml"
-  ]
+	"skins": {},
+	"autoGenerateExmlsList": false,
+	"exmls": [
+		"resource/customSkins/homeLayout/home.exml"
+	],
+	"path": "resource/default.thm.json"
 }
