@@ -78,7 +78,6 @@ var Main = (function (_super) {
          * 加载进度界面
          * loading process interface
          */
-        // private loadingView: LoadingUI;
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.isThemeLoadEnd = false;
         _this.isBGResourceLoadEnd = false;
@@ -228,25 +227,25 @@ var Main = (function (_super) {
         }
     };
     Main.prototype.loadChooseLayout = function () {
-        var choose = new Choose();
-        this.homeUI.chooseLayout.addChild(choose);
+        // let choose = new Choose();
+        // this.homeUI.chooseLayout.addChild(choose);
     };
     Main.prototype.loadHistoryLayout = function () {
-        var history = new HistoryLayout();
-        this.homeUI.historyLayout.addChild(history);
+        // let history = new HistoryLayout();
+        // this.homeUI.historyLayout.addChild(history);
     };
     Main.prototype.loadTurntableLayout = function () {
-        var turntable = new Turntable();
-        this.homeUI.turntableLayout.addChild(turntable);
+        // let turntable = new Turntable();
+        // this.homeUI.turntableLayout.addChild(turntable);
     };
     Main.prototype.loadSenderLayout = function () {
-        var sender = new Sender();
-        sender.addEventListener(eui.UIEvent.ADDED, function (e) {
-            if (e.$target instanceof eui.Label) {
-                RES.loadGroup('turntableLayout');
-            }
-        }, this);
-        this.homeUI.senderLayout.addChild(sender);
+        // let sender = new Sender();
+        // sender.addEventListener(eui.UIEvent.ADDED,function(e){
+        //     if (e.$target instanceof eui.Label) {
+        //         RES.loadGroup('turntableLayout');   
+        //     } 
+        // },this);
+        // this.homeUI.senderLayout.addChild(sender);
     };
     Main.prototype.loadEntryLayout = function () {
         // let entryLayout = this.homeUI.getChildByName('entryLayout') as eui.DataGroup;
@@ -279,10 +278,16 @@ var Main = (function (_super) {
         this.progressCount += 5;
         // Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
     };
+    /**
+     * 创建场景界面
+     * Create scene interface
+     */
+    // private homeUI : Home;
     Main.prototype.startCreateScene = function () {
-        // 加载背景
-        this.homeUI = new Home();
-        this.addChild(this.homeUI);
+        console.log('hahaha');
+        // // 加载背景
+        // this.homeUI = new Home();
+        // this.addChild(this.homeUI);
         // this.homeUI.bottom = 0;
         // RES.loadGroup('chooseLayout');   
         // RES.loadGroup('historyLayout');     

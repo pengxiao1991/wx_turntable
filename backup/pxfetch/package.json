@@ -1,0 +1,4 @@
+{
+	"name": "fetch",
+	"typings": "typings/pxfetch.d.ts"
+}

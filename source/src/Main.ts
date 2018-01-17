@@ -32,9 +32,8 @@ class Main extends eui.UILayer {
      * 加载进度界面
      * loading process interface
      */
-    // private loadingView: LoadingUI;
 
-    protected async createChildren(): void {
+    protected async createChildren() {
         super.createChildren();
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
@@ -136,27 +135,27 @@ class Main extends eui.UILayer {
         }
     }
     private loadChooseLayout() {
-        let choose = new Choose();
-        this.homeUI.chooseLayout.addChild(choose);
+        // let choose = new Choose();
+        // this.homeUI.chooseLayout.addChild(choose);
        
     }
      private loadHistoryLayout() {
-        let history = new HistoryLayout();
-        this.homeUI.historyLayout.addChild(history);
+        // let history = new HistoryLayout();
+        // this.homeUI.historyLayout.addChild(history);
        
     }
     private loadTurntableLayout () {
-        let turntable = new Turntable();
-        this.homeUI.turntableLayout.addChild(turntable);
+        // let turntable = new Turntable();
+        // this.homeUI.turntableLayout.addChild(turntable);
     }
     private loadSenderLayout() {
-        let sender = new Sender();
-        sender.addEventListener(eui.UIEvent.ADDED,function(e){
-            if (e.$target instanceof eui.Label) {
-                RES.loadGroup('turntableLayout');   
-            } 
-        },this);
-        this.homeUI.senderLayout.addChild(sender);
+        // let sender = new Sender();
+        // sender.addEventListener(eui.UIEvent.ADDED,function(e){
+        //     if (e.$target instanceof eui.Label) {
+        //         RES.loadGroup('turntableLayout');   
+        //     } 
+        // },this);
+        // this.homeUI.senderLayout.addChild(sender);
         
         
     }
@@ -199,12 +198,14 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     
-    private homeUI : Home;
+    // private homeUI : Home;
     protected startCreateScene(): void {
-        // 加载背景
-        this.homeUI = new Home();
+            console.log('hahaha');
+
+        // // 加载背景
+        // this.homeUI = new Home();
         
-        this.addChild(this.homeUI);
+        // this.addChild(this.homeUI);
         
         // this.homeUI.bottom = 0;
         // RES.loadGroup('chooseLayout');   
