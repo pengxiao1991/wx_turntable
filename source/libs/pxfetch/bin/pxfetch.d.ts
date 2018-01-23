@@ -5,6 +5,5 @@ declare class Pxfetch {
     static fetchError(func:Function):void;
     static fetchNetworkError(func:Function):void;
     static pxfetch(param:any,timeout?:any):any;    
-    fetch(param:any,timeout?:any):any;
     
 }

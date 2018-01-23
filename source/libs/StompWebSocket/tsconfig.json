@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"allowJs": true,
+		"outFile": "bin/StompWebSocket.js"
+	},
+	"files": ["src/StompWebSocket.js"]
+
+}

@@ -4,6 +4,6 @@
 		"allowJs": true,
 		"outFile": "bin/pxfetch.js"
 	},
-	"files": ["src/fetch.js","src/pxfetch.js"]
+	"files": ["src/pxfetch.js"]
 
 }

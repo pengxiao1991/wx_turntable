@@ -135,27 +135,27 @@ class Main extends eui.UILayer {
         }
     }
     private loadChooseLayout() {
-        // let choose = new Choose();
-        // this.homeUI.chooseLayout.addChild(choose);
+        let choose = new Choose();
+        this.homeUI.chooseLayout.addChild(choose);
        
     }
      private loadHistoryLayout() {
-        // let history = new HistoryLayout();
-        // this.homeUI.historyLayout.addChild(history);
+        let history = new HistoryLayout();
+        this.homeUI.historyLayout.addChild(history);
        
     }
     private loadTurntableLayout () {
-        // let turntable = new Turntable();
-        // this.homeUI.turntableLayout.addChild(turntable);
+        let turntable = new Turntable();
+        this.homeUI.turntableLayout.addChild(turntable);
     }
     private loadSenderLayout() {
-        // let sender = new Sender();
-        // sender.addEventListener(eui.UIEvent.ADDED,function(e){
-        //     if (e.$target instanceof eui.Label) {
-        //         RES.loadGroup('turntableLayout');   
-        //     } 
-        // },this);
-        // this.homeUI.senderLayout.addChild(sender);
+        let sender = new Sender();
+        sender.addEventListener(eui.UIEvent.ADDED,function(e){
+            if (e.$target instanceof eui.Label) {
+                RES.loadGroup('turntableLayout');   
+            } 
+        },this);
+        this.homeUI.senderLayout.addChild(sender);
         
         
     }
@@ -188,7 +188,7 @@ class Main extends eui.UILayer {
      */
     private onResourceProgress(event: RES.ResourceEvent): void {
         this.progressCount += 5;     
-        // Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
+        Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
 
     }
     // 加载进度百分比
@@ -198,27 +198,28 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     
-    // private homeUI : Home;
+    private homeUI : Home;
     protected startCreateScene(): void {
+        
             console.log('hahaha');
-
+            
         // // 加载背景
-        // this.homeUI = new Home();
+        this.homeUI = new Home();
         
-        // this.addChild(this.homeUI);
+        this.addChild(this.homeUI);
         
-        // this.homeUI.bottom = 0;
-        // RES.loadGroup('chooseLayout');   
-        // RES.loadGroup('historyLayout');     
-        // RES.loadGroup('senderLayout');             
+        this.homeUI.bottom = 0;
+        RES.loadGroup('chooseLayout');   
+        RES.loadGroup('historyLayout');     
+        RES.loadGroup('senderLayout');             
         
-        // let order = new Order();
-        // let rule = new Rule();
-        // new CountDownTime();
-        // new Header();
-        // new NoNetWork();
-        // new MyCoin();
-        // WebsocketService.init();//管道初始化
+        let order = new Order();
+        let rule = new Rule();
+        new CountDownTime();
+        new Header();
+        new NoNetWork();
+        new MyCoin();
+        WebsocketService.init();//管道初始化
 
         
         // Native.bindBackListener((params) => {

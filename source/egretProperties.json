@@ -31,8 +31,16 @@
       "name": "promise"
     },
     {
-      "name": "promise",
-      "path": "./pxfetch"
+      "name": "pxfetch",
+      "path": "./libs/pxfetch"
+    },
+    {
+      "name": "nativeInterface",
+      "path": "./libs/nativeInterface"
+    },
+    {
+      "name": "StompWebSocket",
+      "path": "./libs/StompWebSocket"
     }
   ]
 }

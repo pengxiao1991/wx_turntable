@@ -227,25 +227,25 @@ var Main = (function (_super) {
         }
     };
     Main.prototype.loadChooseLayout = function () {
-        // let choose = new Choose();
-        // this.homeUI.chooseLayout.addChild(choose);
+        var choose = new Choose();
+        this.homeUI.chooseLayout.addChild(choose);
     };
     Main.prototype.loadHistoryLayout = function () {
-        // let history = new HistoryLayout();
-        // this.homeUI.historyLayout.addChild(history);
+        var history = new HistoryLayout();
+        this.homeUI.historyLayout.addChild(history);
     };
     Main.prototype.loadTurntableLayout = function () {
-        // let turntable = new Turntable();
-        // this.homeUI.turntableLayout.addChild(turntable);
+        var turntable = new Turntable();
+        this.homeUI.turntableLayout.addChild(turntable);
     };
     Main.prototype.loadSenderLayout = function () {
-        // let sender = new Sender();
-        // sender.addEventListener(eui.UIEvent.ADDED,function(e){
-        //     if (e.$target instanceof eui.Label) {
-        //         RES.loadGroup('turntableLayout');   
-        //     } 
-        // },this);
-        // this.homeUI.senderLayout.addChild(sender);
+        var sender = new Sender();
+        sender.addEventListener(eui.UIEvent.ADDED, function (e) {
+            if (e.$target instanceof eui.Label) {
+                RES.loadGroup('turntableLayout');
+            }
+        }, this);
+        this.homeUI.senderLayout.addChild(sender);
     };
     Main.prototype.loadEntryLayout = function () {
         // let entryLayout = this.homeUI.getChildByName('entryLayout') as eui.DataGroup;
@@ -276,29 +276,24 @@ var Main = (function (_super) {
      */
     Main.prototype.onResourceProgress = function (event) {
         this.progressCount += 5;
-        // Native.startLoading(`正在初始化${this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount}%(不消耗流量)`);
+        Native.startLoading("\u6B63\u5728\u521D\u59CB\u5316" + (this.progressCount < 0 ? 0 : this.progressCount > 100 ? 100 : this.progressCount) + "%(\u4E0D\u6D88\u8017\u6D41\u91CF)");
     };
-    /**
-     * 创建场景界面
-     * Create scene interface
-     */
-    // private homeUI : Home;
     Main.prototype.startCreateScene = function () {
         console.log('hahaha');
         // // 加载背景
-        // this.homeUI = new Home();
-        // this.addChild(this.homeUI);
-        // this.homeUI.bottom = 0;
-        // RES.loadGroup('chooseLayout');   
-        // RES.loadGroup('historyLayout');     
-        // RES.loadGroup('senderLayout');             
-        // let order = new Order();
-        // let rule = new Rule();
-        // new CountDownTime();
-        // new Header();
-        // new NoNetWork();
-        // new MyCoin();
-        // WebsocketService.init();//管道初始化
+        this.homeUI = new Home();
+        this.addChild(this.homeUI);
+        this.homeUI.bottom = 0;
+        RES.loadGroup('chooseLayout');
+        RES.loadGroup('historyLayout');
+        RES.loadGroup('senderLayout');
+        var order = new Order();
+        var rule = new Rule();
+        new CountDownTime();
+        new Header();
+        new NoNetWork();
+        new MyCoin();
+        WebsocketService.init(); //管道初始化
         // Native.bindBackListener((params) => {
         //     if (order.active) {
         //         order.closePanel();
